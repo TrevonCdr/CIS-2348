@@ -21,5 +21,5 @@ for line in my_file:                                      # iterate over lines i
          entered_date = datetime.datetime(int(line[2]), months[line[0]], int(line[1]))
       else:
          continue
-      if current_date > entered_date:
+      if current_date > entered_date:                                     # compare current date to entered date
           print("{}/{}/{}".format(months[line[0]], line[1], line[2]))
